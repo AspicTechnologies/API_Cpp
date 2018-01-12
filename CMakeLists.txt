@@ -13,7 +13,7 @@ find_library(dep_libhdf5_tools_lib libhdf5_tools PATHS ${hdf5root} NO_DEFAULT_PA
 
 set(netcdfroot "${libroot}/netcdf")
 find_library(dep_netcdf_lib netcdf PATHS ${netcdfroot} NO_DEFAULT_PATH)
-find_library(dep_netcdf_cxx_lib netcdf-cxx PATHS ${netcdfroot} NO_DEFAULT_PATH)
+find_library(dep_netcdf_cxx_lib netcdf-cxx4 PATHS ${netcdfroot} NO_DEFAULT_PATH)
 
 load_dependencies(zlibstatic)
 
